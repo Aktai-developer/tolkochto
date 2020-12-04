@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  max-width: 1366px;
+  margin: 0 auto;
+  font-family: 'Space Grotesk', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-8 {
+  width: 66.666%;
+}
+
+.col-7 {
+  width: 58.3333%;
+}
+
+.col-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.col-5 {
+  width: 41.6666%;
+}
+
+.col-4 {
+  width: 33.333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.6666%;
+}
+
+.example {
+
+  // .example__title
+
+  &__title {
+    padding: 96px 0 48px;
+
+    h1 {
+      width: 85.5%;
+      font-size: 7.2rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      background: rgb(17, 0, 255);
+      color: #fff;
+    }
+
+
+
+  }
+
+  // .example__content
+
+  &__content {
+    display: flex;
+    position: relative;
+    margin-bottom: 33px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 9px;
+      width: 50%;
+      height: 1px;
+      background: #e5e5e5;
+    }
+
+    .content-info {
+      padding-left: 32px;
+
+      h4 {
+        padding: 24px 0 4px;
+        font-size: 2rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      .content-sub-title {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #676767;
+        padding-bottom: 24px;
+        line-height: 27.2px;
+      }
+
+      .time {
+        font-size: 1.6rem;
+        font-weight: 700;
+        padding-bottom: 12px;
+      }
+    }
+
+    .content-sub-title {}
+
+    .time {}
+
+  }
+
+}
+
+.line {
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -0px;
+    width: 50%;
+    height: 1px;
+    background: #e5e5e5;
+  }
+}
+
+
+.example2 {
+  .example2__content {
+    padding-top: 48px;
+
+    .example__title {
+      padding-bottom: 48px;
+    }
+
+    .date {
+      font-size: 16px;
+      font-weight: 400;
+      color: #676767;
+      padding: 0 0 27px;
+
+      span {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        text-transform: uppercase;
+        padding-right: 14px;
+      }
+    }
+
+    .example2__sub-title {
+      font-size: 24px;
+      font-weight: 400;
+      color: #676767;
+      line-height: 41px;
+      padding-bottom: 72px;
+    }
+
+    .form {
+      input {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        border: none;
+        border-bottom: 1px solid #b8b8b8;
+        margin-bottom: 31px;
+      }
+
+      input:placeholder {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .link {
+        font-size: 30px;
+        font-weight: 400;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .content {
+    background: #F4F4F4;
+    margin-top: 4.8rem;
+    padding: 48px 48px 192px;
+
+    .text {
+      font-size: 1.6rem;
+      font-weight: 400;
+      padding-bottom: 32px;
+      color: #676767;
+    }
+
+    .price {
+      display: flex;
+
+      h2 {
+        padding-right: 4.8rem;
+        font-size: 5.2rem;
+        font-weight: 400;
+      }
+
+      .descount {
+
+        padding: 15px 20px;
+        background: #FEF653;
+
+        h3 {
+          font-size: 2rem;
+          font-weight: 500;
+          padding-bottom: 5px;
+        }
+
+        p {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: #676767;
+        }
+      }
+
+
+    }
+
+    .mount {
+      font-size: 2.4rem;
+      font-weight: 400;
+      padding-bottom: 46px;
+    }
+
+    .plan {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #676767;
+      padding-bottom: 10px;
+    }
+
+    .sum {
+      font-size: 2.4rem;
+      font-weight: 400;
+      color: #676767;
+    }
+  }
+}
